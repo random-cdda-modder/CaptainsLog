@@ -42,6 +42,10 @@ public class CustomMessageIntel extends BaseIntel {
         setImportant(isImportant);
     }
 
+    protected String getName() {
+        return title;
+    }
+    
     private String getLocationString() {
         String locationString = "Location: ";
         if (targetLocation != locationCreated) {
