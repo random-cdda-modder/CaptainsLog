@@ -10,6 +10,11 @@ import com.fs.starfarer.api.util.Misc;
 
 public abstract class BaseIntel extends BaseIntelPlugin {
 
+    protected String getName() {
+        // Fallback to empty string to prevent game crashes.
+        return "";
+    }
+    
     @Override
     public String getSortString() {
         SectorEntityToken mapLocation = getEntity();
